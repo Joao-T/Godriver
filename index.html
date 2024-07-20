@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/bulma.min.css" />
+    
+  <title>Cadastro e Alteração de Senha</title>
+  <!DOCTYPE html>
+  <html>
+  <head>
+      <title>Cadastro e Alteração de Senha</title>
+      <style>
+        *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html,body{
+  display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+  background: -webkit-linear-gradient(left, #283048, #859398);
+}
+          
+          .container {
+              background-color: #ffffff;
+              padding: 20px;
+              border-radius: 8px;
+              box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+              width: 400px;
+          }
+          
+          h2 {
+              text-align: center;
+              margin-bottom: 20px;
+          }
+          
+          form {
+              display: flex;
+              flex-direction: column;
+          }
+          
+          input[type="text"],
+          input[type="email"],
+          input[type="password"] {
+              padding: 10px;
+              margin-bottom: 10px;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+          }
+          
+          input[type="submit"] {
+              background-color: #0f0f0f;
+              color: #fff;
+              border: none;
+              padding: 10px;
+              border-radius: 4px;
+              cursor: pointer;
+          }
+          
+          input[type="submit"]:hover {
+              background-color: #151515;
+          }
+          
+          a {
+        color: #fff;
+        border: 2px solid darkgray;
+        background-color: black;
+        padding: 5px 10px;
+        border-radius: 20px;
+        font-weight: 700;
+        margin-top: 10px;
+        transition: all 0.3s;
+        text-decoration: none;
+        
+    }
+      </style>
+  </head>
+  <body>
+    
+      <div class="container"><br><br>
+        <a href="index.php" class="btn btn-danger">Voltar</a>
+          <h2>Deseja fazer Log out?</h2>
+          <a href="logoutcliente.php" class="btn btn-danger">Sair da conta</a>
+          
+          <h2>Alteração de Senha</h2>
+          <form action="alterarsenha.php" method="post">
+              E-mail: <input type="email" name="email">
+              Senha Atual: <input type="password" name="senha_atual">
+              Nova Senha: <input type="password" name="nova_senha">
+              <input type="submit" value="Alterar Senha">
+          </form>
+          
+      </div>
+      
+  </body>
+  </html>
+  
